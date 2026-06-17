@@ -674,50 +674,101 @@ svg {
 
 @media (max-width: 680px) {
   .app-frame {
-    width: min(100% - 24px, 1180px);
-    padding-top: 12px;
+    width: min(100% - 20px, 1180px);
+    padding-top: 10px;
   }
 
   .site-header {
-    padding: 14px;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 10px;
+    min-height: 236px;
+    padding: 18px;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 16px;
   }
 
   .brand {
-    width: min(210px, 55vw);
-    min-height: 44px;
+    width: min(235px, 72vw);
+    min-height: 50px;
   }
 
   .header-family {
-    width: clamp(124px, 38vw, 180px);
+    width: min(52vw, 190px);
     height: 100%;
-    opacity: 0.74;
-    mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.18) 24%, #000 58%, #000 100%);
+    opacity: 0.62;
+    mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.08) 18%, rgba(0, 0, 0, 0.78) 56%, #000 100%);
+  }
+
+  .header-content {
+    gap: 20px;
+    align-content: start;
+  }
+
+  .header-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 320px);
+    gap: 8px;
+    overflow: visible;
+    padding-bottom: 0;
   }
 
   .header-actions a {
-    min-height: 36px;
-    padding: 0 12px;
-    font-size: 12px;
+    min-height: 42px;
+    padding: 0 10px;
+    font-size: 13px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+  }
+
+  .header-actions .header-button {
+    justify-self: start;
+    width: 100%;
   }
 
   .hero-section {
-    margin-top: 14px;
-    padding: 18px;
+    margin-top: 12px;
+    padding: 22px 18px;
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(239, 247, 251, 0.92)),
+      #ffffff;
   }
 
   .hero-copy h1 {
-    font-size: clamp(34px, 10.2vw, 46px);
-    line-height: 1.02;
+    max-width: 330px;
+    margin-bottom: 12px;
+    font-size: clamp(31px, 8.8vw, 40px);
+    line-height: 1.03;
   }
 
   .hero-subtitle {
-    font-size: 17px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.32;
   }
 
   .hero-description {
     font-size: 15px;
+    line-height: 1.58;
+    margin-bottom: 18px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .hero-badges {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 9px;
+    max-width: 260px;
+  }
+
+  .hero-badges span {
+    min-height: 42px;
+    justify-content: flex-start;
+    font-size: 13px;
   }
 
   .conditions-section,
@@ -728,7 +779,8 @@ svg {
 
   .section-heading h2,
   .panel-heading h2 {
-    font-size: clamp(24px, 7vw, 32px);
+    font-size: clamp(22px, 6.4vw, 29px);
+    line-height: 1.14;
   }
 
   .checklist,
@@ -744,9 +796,14 @@ svg {
 
   .payment-card {
     min-height: 0;
+    padding: 18px;
   }
 
   .amount {
-    font-size: clamp(52px, 15vw, 72px);
+    font-size: clamp(48px, 13vw, 64px);
+  }
+
+  .primary-button {
+    width: 100%;
   }
 }
