@@ -107,7 +107,7 @@ svg {
 .brand {
   display: grid;
   align-items: center;
-  width: clamp(220px, 31vw, 360px);
+  width: clamp(240px, 32vw, 390px);
   min-height: 62px;
 }
 
@@ -115,7 +115,7 @@ svg {
   display: block;
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.28));
 }
 
 .header-actions {
@@ -633,22 +633,49 @@ svg {
 
 .site-footer {
   display: grid;
-  gap: 6px;
+  gap: 8px;
   justify-items: center;
   margin-top: 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 22px;
+  padding: 26px 18px;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.75);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(238, 247, 251, 0.82)),
+    rgba(255, 255, 255, 0.75);
   text-align: center;
+}
+
+.footer-seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  border: 1px solid rgba(10, 93, 143, 0.16);
+  border-radius: 999px;
+  padding: 0 12px;
+  color: var(--blue);
+  background: var(--blue-soft);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
 }
 
 .site-footer strong {
   color: var(--navy);
+  font-size: clamp(20px, 2.4vw, 30px);
+  line-height: 1.15;
 }
 
 .site-footer span {
+  max-width: 760px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.site-footer small {
+  color: var(--subtle);
   font-size: 13px;
   font-weight: 750;
 }
@@ -666,7 +693,7 @@ svg {
   }
 
   .brand {
-    width: min(280px, 54vw);
+    width: min(290px, 58vw);
   }
 
   .header-content {
@@ -728,7 +755,7 @@ svg {
   }
 
   .brand {
-    width: min(225px, 66vw);
+    width: min(245px, 70vw);
     min-height: 46px;
   }
 
