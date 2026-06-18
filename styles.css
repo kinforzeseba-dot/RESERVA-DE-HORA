@@ -696,8 +696,8 @@ svg {
   }
 
   .site-header {
-    min-height: 286px;
-    padding: 18px;
+    min-height: 252px;
+    padding: 16px;
     grid-template-columns: 1fr;
     align-items: start;
     gap: 0;
@@ -728,8 +728,8 @@ svg {
   }
 
   .brand {
-    width: min(238px, 68vw);
-    min-height: 50px;
+    width: min(225px, 66vw);
+    min-height: 46px;
   }
 
   .brand img {
@@ -760,7 +760,7 @@ svg {
   }
 
   .header-family img {
-    object-position: 63% 45%;
+    object-position: 66% 44%;
     filter: brightness(1.14) saturate(1.02) contrast(1.02);
     transform: scale(1.08);
   }
@@ -774,32 +774,35 @@ svg {
 
   .header-actions {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     width: 100%;
-    gap: 8px;
-    margin-top: 88px;
-    border: 1px solid rgba(255, 255, 255, 0.09);
-    border-radius: 22px;
-    padding: 8px;
-    background: rgba(2, 7, 13, 0.22);
-    backdrop-filter: blur(16px);
+    gap: 7px;
+    margin-top: 78px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+    backdrop-filter: none;
     overflow: visible;
   }
 
   .header-actions a {
-    min-height: 40px;
-    padding: 0 10px;
-    font-size: 13px;
+    min-height: 38px;
+    padding: 0 8px;
+    font-size: 12px;
     border-radius: 999px;
     color: #e6f1f8;
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.13);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(14px);
+    border-color: rgba(255, 255, 255, 0.13);
+    background: rgba(255, 255, 255, 0.115);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      0 8px 18px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(12px);
   }
 
   .header-actions .header-button {
-    justify-self: start;
+    grid-column: 1 / -1;
+    justify-self: stretch;
     width: 100%;
     color: var(--navy);
     background: rgba(255, 255, 255, 0.96);
@@ -807,8 +810,10 @@ svg {
 
   .header-actions .schedule-button {
     grid-column: 1 / -1;
+    min-height: 44px;
     color: #ffffff;
     background: linear-gradient(135deg, var(--green), #0d3a30);
+    font-size: 14px;
   }
 
   .hero-section {
