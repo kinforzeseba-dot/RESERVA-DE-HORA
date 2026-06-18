@@ -146,6 +146,12 @@ svg {
   background: #ffffff;
 }
 
+.header-actions .schedule-button {
+  color: #ffffff;
+  border-color: rgba(24, 120, 95, 0.45);
+  background: linear-gradient(135deg, var(--green), #0d3a30);
+}
+
 .header-family {
   position: absolute;
   top: 0;
@@ -262,9 +268,11 @@ svg {
   gap: 10px;
 }
 
-.hero-badges span {
+.hero-badges span,
+.hero-action {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   min-height: 40px;
   border: 1px solid rgba(10, 93, 143, 0.13);
@@ -274,6 +282,14 @@ svg {
   background: var(--blue-soft);
   font-size: 13px;
   font-weight: 850;
+}
+
+.hero-action {
+  color: #ffffff;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--green), #0d3a30);
+  box-shadow: 0 14px 28px rgba(24, 120, 95, 0.18);
+  text-decoration: none;
 }
 
 .hero-badges svg {
@@ -789,6 +805,12 @@ svg {
     background: rgba(255, 255, 255, 0.96);
   }
 
+  .header-actions .schedule-button {
+    grid-column: 1 / -1;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--green), #0d3a30);
+  }
+
   .hero-section {
     margin-top: 12px;
     padding: 20px 18px;
@@ -828,7 +850,8 @@ svg {
     max-width: 100%;
   }
 
-  .hero-badges span {
+  .hero-badges span,
+  .hero-action {
     min-height: 40px;
     justify-content: center;
     padding: 0 10px;
