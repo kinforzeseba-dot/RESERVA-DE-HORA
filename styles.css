@@ -679,23 +679,23 @@ svg {
   }
 
   .site-header {
-    min-height: 292px;
-    padding: 20px;
+    min-height: 268px;
+    padding: 18px;
     grid-template-columns: 1fr;
     align-items: start;
     gap: 0;
     background:
       linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
       linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-      linear-gradient(135deg, #02070d 0%, #061727 55%, #0a2d45 100%);
+      linear-gradient(135deg, #02070d 0%, #061727 56%, #0b3650 100%);
     background-size: 48px 48px, 48px 48px, auto;
   }
 
   .site-header::before {
     z-index: 2;
     background:
-      linear-gradient(90deg, #02070d 0%, rgba(2, 7, 13, 0.98) 34%, rgba(6, 23, 39, 0.76) 55%, rgba(6, 23, 39, 0.34) 100%),
-      linear-gradient(180deg, rgba(2, 7, 13, 0.06) 0%, rgba(6, 23, 39, 0.22) 42%, #061727 100%);
+      linear-gradient(90deg, #02070d 0%, rgba(2, 7, 13, 0.98) 38%, rgba(6, 23, 39, 0.42) 59%, transparent 100%),
+      linear-gradient(180deg, transparent 0%, transparent 36%, rgba(6, 23, 39, 0.36) 58%, #061727 100%);
   }
 
   .site-header::after {
@@ -711,7 +711,7 @@ svg {
   }
 
   .brand {
-    width: min(245px, 70vw);
+    width: min(238px, 68vw);
     min-height: 50px;
   }
 
@@ -722,20 +722,23 @@ svg {
   }
 
   .header-family {
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    width: min(54vw, 225px);
+    height: 142px;
+    border-radius: 0 8px 0 110px;
     opacity: 1;
     mask-image: none;
+    box-shadow: inset 0 -18px 28px rgba(6, 23, 39, 0.12);
   }
 
   .header-family::before {
     z-index: 1;
     background:
-      linear-gradient(90deg, #02070d 0%, rgba(2, 7, 13, 0.98) 30%, rgba(6, 23, 39, 0.72) 55%, rgba(6, 23, 39, 0.22) 100%),
-      linear-gradient(180deg, rgba(2, 7, 13, 0.06) 0%, rgba(6, 23, 39, 0.12) 42%, rgba(6, 23, 39, 0.82) 100%),
-      radial-gradient(circle at 78% 18%, rgba(255, 255, 255, 0.22), transparent 34%);
+      linear-gradient(90deg, rgba(6, 23, 39, 0.58) 0%, rgba(6, 23, 39, 0.16) 42%, transparent 100%),
+      linear-gradient(180deg, transparent 0%, transparent 58%, rgba(6, 23, 39, 0.22) 100%);
   }
 
   .header-family::after {
@@ -743,8 +746,9 @@ svg {
   }
 
   .header-family img {
-    object-position: 70% 12%;
-    transform: scale(1.05);
+    object-position: 62% 18%;
+    filter: brightness(1.12) saturate(1.05) contrast(0.98);
+    transform: scale(1.03);
   }
 
   .header-content {
@@ -759,19 +763,19 @@ svg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
     gap: 8px;
-    margin-top: 88px;
+    margin-top: 78px;
     overflow: visible;
     padding-bottom: 0;
   }
 
   .header-actions a {
-    min-height: 42px;
+    min-height: 40px;
     padding: 0 10px;
     font-size: 13px;
     border-radius: 999px;
     color: #e6f1f8;
     border-color: rgba(255, 255, 255, 0.13);
-    background: rgba(255, 255, 255, 0.105);
+    background: rgba(255, 255, 255, 0.11);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(14px);
   }
@@ -792,13 +796,13 @@ svg {
   .hero-copy h1 {
     max-width: 340px;
     margin-bottom: 12px;
-    font-size: clamp(28px, 8vw, 38px);
-    line-height: 1.03;
+    font-size: clamp(27px, 7.4vw, 35px);
+    line-height: 1.06;
   }
 
   .hero-subtitle {
     margin-bottom: 12px;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.32;
   }
 
